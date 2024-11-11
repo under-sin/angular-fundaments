@@ -1,0 +1,13 @@
+<p>home works!</p>
+
+<img [src]="imageUrl" />
+
+<button (click)="handleClick()">{{count()}}</button>
+
+<p *ngIf="count() > 3">{{count()}}</p>
+
+@if(count() > 3) {
+<p>Count is greater than 3</p>
+} @else {
+<p>Count is less than 3</p>
+}
